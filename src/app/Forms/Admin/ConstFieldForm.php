@@ -29,6 +29,14 @@ class ConstFieldForm extends Form
             'label' => 'admin.const_field.company_name',
             'rules' => [],
         ],
+        'company_description' => [
+            'name' => 'company_description',
+            'type' => 'textarea',
+            'label' => 'admin.const_field.company_description',
+            'rules' => [],
+            'row' => 5,
+            'class' => 'ckeditorStandard',
+        ],
         'company_address' => [
             'name' => 'company_address',
             'type' => 'text',
@@ -65,10 +73,22 @@ class ConstFieldForm extends Form
             'label' => 'admin.const_field.company_krs',
             'rules' => [],
         ],
+        'person' => [
+            'name' => 'person',
+            'type' => 'text',
+            'label' => 'admin.const_field.person',
+            'rules' => [],
+        ],
         'phone' => [
             'name' => 'phone',
             'type' => 'text',
             'label' => 'admin.const_field.phone',
+            'rules' => [],
+        ],
+        'link_to_map' => [
+            'name' => 'link_to_map',
+            'type' => 'text',
+            'label' => 'admin.const_field.link_to_map',
             'rules' => [],
         ],
         'phone2' => [

@@ -1,30 +1,25 @@
 
 
-<form id="contactForm" method="POST">
-    <div class="form-group">
-        <label for="name">Name</label>
-        <input id="name" type="text" name="name" placeholder="Name" class="form-control">
-        <div class="invalid-feedback"></div>
-    </div>
-    <div class="row">
+<form id="contactForm" method="POST" class="contact__form">
+    <div class="row gutter-20">
         <div class="col-md-6">
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input id="email" type="email" name="email" placeholder="Email" class="form-control">
+            <div class="form-grp">
+                <label for="name">Imię *</label>
+                <input id="name" type="text" name="name" placeholder="Twoje imię*" class="form-control" required="">
                 <div class="invalid-feedback"></div>
             </div>
         </div>
         <div class="col-md-6">
-            <div class="form-group">
-                <label for="phone">Phone</label>
-                <input id="phone" type="text" name="phone" placeholder="Phone" class="form-control">
+            <div class="form-grp">
+                <label for="email">Email *</label>
+                <input id="email" type="email" name="email" placeholder="Twój adres email *" class="form-control" required="">
                 <div class="invalid-feedback"></div>
             </div>
         </div>
     </div>
-    <div class="form-group">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" placeholder="Message" class="form-control"></textarea>
+    <div class="form-grp">
+        <label for="message">Wiadomość *</label>
+        <textarea id="message" name="message" rows="5" placeholder="Twoja wiadomość *" class="form-control" required=""></textarea>
         <div class="invalid-feedback"></div>
     </div>
 
@@ -41,7 +36,7 @@
         <div class="invalid-feedback"></div>
     </div>
 
-    <input type="submit" value="Send" class="btn btn-outline-primary mb-3">
+    <input type="submit" value="Wyślij wiadomość" class="btn btn-two">
 
     <div id="alert" class="alert"></div>
 </form>

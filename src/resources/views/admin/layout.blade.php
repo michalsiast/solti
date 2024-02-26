@@ -106,7 +106,7 @@
 
 @include('admin.flash-message')
 
-<script src="https://cdnout.com/jquery/"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="{{asset('_admin/js/vendors/jquery-ui.js')}}"></script>
 <script src="{{asset('_admin/js/vendors/ckeditor.js')}}"></script>
 {{--<script src="{{asset('_admin/js/vendors/Chart.min.js')}}"></script>--}}
