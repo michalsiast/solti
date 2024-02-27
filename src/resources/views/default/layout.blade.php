@@ -219,16 +219,13 @@
                         <div class="footer__widget-link">
                             <ul class="list-wrap">
                                 <li>
-                                    <a href="appointment.html"><i class="renova-right-arrow"></i><span>Appointment</span></a>
+                                    <a href="{{route('offer.index')}}"><i class="renova-right-arrow"></i><span>Oferta</span></a>
                                 </li>
                                 <li>
-                                    <a href="contact.html"><i class="renova-right-arrow"></i><span>Terms & Condition</span></a>
+                                    <a href="{{route('article.index')}}"><i class="renova-right-arrow"></i><span>Baza wiedzy</span></a>
                                 </li>
                                 <li>
-                                    <a href="contact.html"><i class="renova-right-arrow"></i><span>Get in touch</span></a>
-                                </li>
-                                <li>
-                                    <a href="project.html"><i class="renova-right-arrow"></i><span>Project Showcase</span></a>
+                                    <a href="{{route('contact.show')}}"><i class="renova-right-arrow"></i><span>Kontakt</span></a>
                                 </li>
                             </ul>
                         </div>
