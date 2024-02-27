@@ -39,11 +39,13 @@
                             <div class="container">
                                 <div class="row">
                                     @foreach($item->gallery->items as $item)
-                                        <div class="col-lg-4 pb-4 magnific-img">
-                                            <a class="image-popup-vertical-fit" href="{{renderImage($item->url, 1920, 1080, 'resize')}}">
-                                                <img style="width: 100%" src="{{renderImage($item->url, 600, 600, 'fit')}}" alt="">
-                                            </a>
-                                        </div>
+                                        @if($item->type !== 'cover')
+                                            <div class="col-lg-4 pb-4 magnific-img">
+                                                <a class="image-popup-vertical-fit" href="{{renderImage($item->url, 1920, 1080, 'resize')}}">
+                                                    <img style="width: 100%" src="{{renderImage($item->url, 600, 600, 'fit')}}" alt="">
+                                                </a>
+                                            </div>
+                                        @endif
                                     @endforeach
                                 </div>
                             </div>
