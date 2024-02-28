@@ -1,4 +1,4 @@
-@if(isset($items))
+@if($items->isNotEmpty())
     <section class="blog__post-area section-pt-120 section-pb-90">
         <div class="container">
             <div class="row">
