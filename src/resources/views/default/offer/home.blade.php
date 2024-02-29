@@ -23,7 +23,6 @@
                         </div>
                         <div class="blog__post-content">
                             <h4 class="title"><a href="{{route('offer.show.'.$item->id)}}">{{$item->title}}</a></h4>
-                            {!! $item->lead !!}
                             <a href="{{route('offer.show.'.$item->id)}}" class="btn">Zobacz ofertę</a>
                         </div>
                     </div>
