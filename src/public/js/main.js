@@ -219,15 +219,18 @@ var projectTwoSwiper = new Swiper('.project__active-two', {
 =============================================*/
 var brandSwiper = new Swiper('.brand-active', {
     // Optional parameters
-    slidesPerView: 5,
+    slidesPerView: 6,
     spaceBetween: 24,
     loop: true,
+    autoplay: {
+        delay: 2000,
+    },
     breakpoints: {
         '1500': {
-            slidesPerView: 5,
+            slidesPerView: 6,
         },
         '1200': {
-            slidesPerView: 5,
+            slidesPerView: 6,
         },
         '992': {
             slidesPerView: 4,
@@ -236,10 +239,10 @@ var brandSwiper = new Swiper('.brand-active', {
             slidesPerView: 3,
         },
         '576': {
-            slidesPerView: 3,
+            slidesPerView: 2,
         },
         '0': {
-            slidesPerView: 2,
+            slidesPerView: 1,
         },
     },
 });
