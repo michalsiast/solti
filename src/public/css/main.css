@@ -10985,7 +10985,7 @@ textarea {
   padding: 13px 26px 11px;
   color: var(--tg-color-white-default);
 }
-.blog__post-content .btn:hover {
+.blog__post-content .btn:hover , .services__content-two .btn:hover{
   background: var(--tg-theme-primary);
 }
 .blog__post-content-two {
