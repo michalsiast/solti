@@ -10,10 +10,7 @@
             </div>
         </div>
         <div class="row justify-content-center gutter-24">
-            @php
-                $limitedItems = $items->take(3);
-            @endphp
-            @foreach($limitedItems as $item)
+            @foreach($items as $item)
                 @if(in_array($item->id, [10, 27, 4]))
                 <div class="col-lg-4 col-md-6">
                     <div class="blog__post-item shine__animate-item">
