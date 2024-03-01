@@ -14,6 +14,7 @@
                 $limitedItems = $items->take(3);
             @endphp
             @foreach($limitedItems as $item)
+                @if(in_array($item->id, [10, 27, 4]))
                 <div class="col-lg-4 col-md-6">
                     <div class="blog__post-item shine__animate-item">
                         <div class="blog__post-thumb">
@@ -27,6 +28,7 @@
                         </div>
                     </div>
                 </div>
+                @endif
             @endforeach
         </div>
         <div class="d-flex justify-content-center">
