@@ -38,7 +38,7 @@
                                     </div>
                                     <div class="services__content-two">
                                         <h4 class="title"><a href="{{route('offer.show.'.$item->id)}}">{{$item->title}}</a></h4>
-                                        {!! $item->lead !!}
+                                        <a href="{{route('offer.show.'.$item->id)}}" class="btn mt-2">Zobacz ofertę</a>
                                     </div>
                                 </div>
                             </div>

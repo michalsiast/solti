@@ -244,7 +244,7 @@
                         @if(!empty($fields->pillars_our_excellence_icon_2))
                             <div class="work__icon">
                                 <i class="{{$fields->pillars_our_excellence_icon_2}}"></i>
-                                <span class="number">01</span>
+                                <span class="number">02</span>
                             </div>
                         @endif
                         <div class="work__content-two">
@@ -262,7 +262,7 @@
                         @if(!empty($fields->pillars_our_excellence_icon_3))
                             <div class="work__icon">
                                 <i class="{{$fields->pillars_our_excellence_icon_3}}"></i>
-                                <span class="number">01</span>
+                                <span class="number">03</span>
                             </div>
                         @endif
                         <div class="work__content-two">
@@ -280,7 +280,7 @@
                         @if(!empty($fields->pillars_our_excellence_icon_4))
                             <div class="work__icon">
                                 <i class="{{$fields->pillars_our_excellence_icon_4}}"></i>
-                                <span class="number">01</span>
+                                <span class="number">04</span>
                             </div>
                         @endif
                         <div class="work__content-two">

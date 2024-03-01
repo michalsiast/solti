@@ -12,19 +12,19 @@
         <div class="row justify-content-center gutter-24">
             @foreach($items as $item)
                 @if(in_array($item->id, [10, 27, 4]))
-                <div class="col-lg-4 col-md-6">
-                    <div class="blog__post-item shine__animate-item">
-                        <div class="blog__post-thumb">
-                            <a href="{{route('offer.show.'.$item->id)}}" class="shine__animate-link">
-                                <img src="{{ renderImage($item->galleryCover(), 440, 280, 'cover') }}" alt="img">
-                            </a>
-                        </div>
-                        <div class="blog__post-content">
-                            <h4 class="title"><a href="{{route('offer.show.'.$item->id)}}">{{$item->title}}</a></h4>
-                            <a href="{{route('offer.show.'.$item->id)}}" class="btn">Zobacz ofertę</a>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog__post-item shine__animate-item">
+                            <div class="blog__post-thumb">
+                                <a href="{{route('offer.show.'.$item->id)}}" class="shine__animate-link">
+                                    <img src="{{ renderImage($item->galleryCover(), 440, 280, 'cover') }}" alt="img">
+                                </a>
+                            </div>
+                            <div class="blog__post-content">
+                                <h4 class="title"><a href="{{route('offer.show.'.$item->id)}}">{{$item->title}}</a></h4>
+                                <a href="{{route('offer.show.'.$item->id)}}" class="btn">Zobacz ofertę</a>
+                            </div>
                         </div>
                     </div>
-                </div>
                 @endif
             @endforeach
         </div>

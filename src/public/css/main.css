@@ -10977,7 +10977,7 @@ textarea {
     padding-bottom: 20px;
     margin-bottom: 20px;
 }
-.blog__post-content .btn {
+.blog__post-content .btn, .services__content-two .btn {
   border: none;
   background: var(--tg-color-dark-4);
   font-size: 16px;
