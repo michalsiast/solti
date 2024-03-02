@@ -97,6 +97,12 @@ class ConstFieldForm extends Form
             'label' => 'admin.const_field.phone2',
             'rules' => [],
         ],
+        'phone3' => [
+            'name' => 'phone3',
+            'type' => 'text',
+            'label' => 'admin.const_field.phone3',
+            'rules' => [],
+        ],
         'email' => [
             'name' => 'email',
             'type' => 'text',

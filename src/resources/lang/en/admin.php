@@ -160,6 +160,7 @@ return [
     'const_field.person' => 'Person',
     'const_field.phone' => 'Phone',
     'const_field.phone2' => 'Phone 2',
+    'const_field.phone3' => 'Phone 3',
     'const_field.email' => 'Email',
     'const_field.email2' => 'Email 2',
     'const_field.contact_form_email' => 'Send mails to',

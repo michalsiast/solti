@@ -200,8 +200,18 @@
                                 </li>
                                 @endif
                                     @if(!empty(getConstField('phone')))
-                                <li>
-                                    <a href="tel:{{str_replace(' ', '', getConstField('phone'))}}"><i class="fas fa-phone"></i><span>{{getConstField('phone')}}</span></a>
+                                <li style="display: flex">
+                                    <i class="fas fa-phone" style="margin-top: 5px"></i><div>
+                                        @if(!empty(getConstField('phone')))
+                                            <a href="tel:{{str_replace(' ', '', getConstField('phone'))}}" style="margin-left: 10px;"><span>{{getConstField('phone')}}</span></a>
+                                        @endif
+                                        @if(!empty(getConstField('phone2')))
+                                            <a href="tel:{{str_replace(' ', '', getConstField('phone2'))}}" style="margin-left: 10px;"><span>{{getConstField('phone2')}}</span></a>
+                                        @endif
+                                        @if(!empty(getConstField('phone3')))
+                                            <a href="tel:{{str_replace(' ', '', getConstField('phone3'))}}" style="margin-left: 10px;"><span>{{getConstField('phone3')}}</span></a>
+                                        @endif
+                                    </div>
                                 </li>
                                     @endif
                                         @if(!empty(getConstField('email')))

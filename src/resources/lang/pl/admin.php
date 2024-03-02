@@ -162,6 +162,7 @@ return [
     'const_field.phone' => 'Nr. kontaktowy',
     'const_field.link_to_map' => 'Link do mapy',
     'const_field.phone2' => 'Nr. kontaktowy 2',
+    'const_field.phone3' => 'Nr. kontaktowy 3',
     'const_field.email' => 'Email',
     'const_field.email2' => 'Email 2',
     'const_field.contact_form_email' => 'Wysyłaj maile na adres',

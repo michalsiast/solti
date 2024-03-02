@@ -350,7 +350,16 @@
                             </div>
                             <div class="content">
                                 <span>Zadzwoń</span>
-                                <h2 class="title"><a href="tel:{{str_replace(' ', '', getConstField('phone'))}}">{{getConstField('phone')}}</a></h2>
+                                <h2 class="title">
+                                    @if(!empty(getConstField('phone')))
+                                    <a href="tel:{{str_replace(' ', '', getConstField('phone'))}}">{{getConstField('phone')}}</a>
+                                    @endif
+                                    @if(!empty(getConstField('phone2')))
+                                        <br><a href="tel:{{str_replace(' ', '', getConstField('phone2'))}}">{{getConstField('phone2')}}</a>
+                                    @endif
+                                    @if(!empty(getConstField('phone3')))
+                                        <br><a href="tel:{{str_replace(' ', '', getConstField('phone3'))}}">{{getConstField('phone3')}}</a>
+                                    @endif</h2>
                             </div>
                         </div>
                     </div>

@@ -61,7 +61,8 @@
                         <div class="card-body">
                             {!! $form->renderFieldGroup('person') !!}
                             {!! $form->renderFieldGroup('phone') !!}
-{{--                            {!! $form->renderFieldGroup('phone2') !!}--}}
+                            {!! $form->renderFieldGroup('phone2') !!}
+                            {!! $form->renderFieldGroup('phone3') !!}
                             {!! $form->renderFieldGroup('email') !!}
 {{--                            {!! $form->renderFieldGroup('email2') !!}--}}
                             {!! $form->renderFieldGroup('contact_form_email') !!}
