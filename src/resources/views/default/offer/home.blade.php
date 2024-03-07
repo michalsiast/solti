@@ -11,7 +11,7 @@
         </div>
         <div class="row justify-content-center gutter-24">
             @foreach($items as $item)
-                @if(in_array($item->id, [10, 27, 4]))
+                @if(in_array($item->id, [3, 27, 12]))
                     <div class="col-lg-4 col-md-6">
                         <div class="blog__post-item shine__animate-item">
                             <div class="blog__post-thumb">

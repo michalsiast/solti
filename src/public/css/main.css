@@ -2918,7 +2918,7 @@ textarea {
   }
 }
 .slider__content {
-  background: var(--tg-color-dark-2);
+  background: #00397c;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -2973,7 +2973,7 @@ textarea {
   font-size: 18px;
   font-weight: 500;
   text-transform: uppercase;
-  color: var(--tg-color-white-default);
+  color: #f49c07;
   display: inline-block;
   line-height: 1;
   position: relative;
@@ -2993,10 +2993,10 @@ textarea {
   transform: translateY(-50%);
   width: 62px;
   height: 2px;
-  background: var(--tg-color-white-default);
+  background: #f49c07;
 }
 .slider__content h2 {
-  color: var(--tg-color-white-default);
+  color: #f49c07;
   font-size: 45px;
   text-transform: uppercase;
   line-height: 1.15;
