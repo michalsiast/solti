@@ -4320,6 +4320,9 @@ textarea {
   margin-bottom: 45px;
   font-size: 18px;
 }
+.offer-color-hormann .title,.offer-color-hormann p,.offer-color-hormann ul li,.offer-color-hormann h4,.offer-color-hormann h5,.offer-color-hormann h6,.offer-color-hormann h3,.offer-color-hormann h2,.offer-color-hormann h1,.offer-color-hormann ol li{
+    color: #f49c07;
+}
 .about__content-two p {
   margin-bottom: 30px;
 }
