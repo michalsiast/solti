@@ -29,19 +29,35 @@
                     {!! $item->text !!}
                     <div class="row gutter-24 justify-content-center">
                         @foreach($items as $item)
-                            <div class="col-lg-4 col-md-6 pt-40">
-                                <div class="services__item-two shine__animate-item">
-                                    <div class="services__thumb-two">
-                                        <a href="{{route('offer.show.'.$item->id)}}" class="shine__animate-link">
-                                            <img src="{{ renderImage($item->galleryCover(), 440, 280, 'cover') }}" alt="img">
-                                        </a>
-                                    </div>
-                                    <div class="services__content-two">
-                                        <h4 class="title"><a href="{{route('offer.show.'.$item->id)}}">{{$item->title}}</a></h4>
-                                        <a href="{{route('offer.show.'.$item->id)}}" class="btn mt-2">Zobacz ofertę</a>
+                            @if($item->offer_category_id == 15)
+                                <div class="col-lg-4 col-md-6 pt-40">
+                                    <div class="services__item-two shine__animate-item">
+                                        <div class="services__thumb-two">
+                                            <a href="{{route('offer.show.'.$item->id)}}" class="shine__animate-link">
+                                                <img src="{{ renderImage($item->galleryCover(), 440, 280, 'cover') }}" alt="img">
+                                            </a>
+                                        </div>
+                                        <div class="services__content-two offer-color-hormann-thumbnail" style="background-color: #00397c;">
+                                            <h4 class="title"><a href="{{route('offer.show.'.$item->id)}}">{{$item->title}}</a></h4>
+                                            <a href="{{route('offer.show.'.$item->id)}}" class="btn mt-2">Zobacz ofertę</a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            @else
+                                <div class="col-lg-4 col-md-6 pt-40">
+                                    <div class="services__item-two shine__animate-item">
+                                        <div class="services__thumb-two">
+                                            <a href="{{route('offer.show.'.$item->id)}}" class="shine__animate-link">
+                                                <img src="{{ renderImage($item->galleryCover(), 440, 280, 'cover') }}" alt="img">
+                                            </a>
+                                        </div>
+                                        <div class="services__content-two">
+                                            <h4 class="title"><a href="{{route('offer.show.'.$item->id)}}">{{$item->title}}</a></h4>
+                                            <a href="{{route('offer.show.'.$item->id)}}" class="btn mt-2">Zobacz ofertę</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                @endif
                         @endforeach
                     </div>
                 </div>
