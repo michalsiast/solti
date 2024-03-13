@@ -121,6 +121,7 @@ return [
     'offer.title' => 'Tytuł',
     'offer.lead' => 'Wprowadzenie',
     'offer.text' => 'Tekst',
+    'offer.pdf_path' => 'Specyfikacja',
 
 
     'offer_category.singular' => 'Kategoria oferty',
@@ -128,6 +129,7 @@ return [
     'offer_category.title' => 'Tytuł',
     'offer_category.lead' => 'Wprowadzenie',
     'offer_category.text' => 'Tekst',
+
 
 
     'realization.singular' => 'Partner',

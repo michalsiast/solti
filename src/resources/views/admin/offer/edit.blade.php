@@ -36,8 +36,13 @@
                             {!! $form->renderFieldGroup('text') !!}
                             {!! $form->renderFieldGroup('pdf_path') !!}
                             <div>
-                                <label>Wybrany plik pdf:</label>
-                                <p>{{ $item->pdf_path }}</p>
+                                <label><b>Wybrany plik pdf:</b></label>
+                                @if($item->pdf_path)
+                                    <p>Dodano plik PDF</p>
+                                @else
+                                <p>Nie dodano pliku PDF</p>
+                                @endif
+
                             </div>
                             <hr>
                             {!! $form->renderFieldGroup('active') !!}

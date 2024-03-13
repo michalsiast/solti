@@ -55,7 +55,7 @@ class OfferForm extends Form
             'name' => 'pdf_path',
             'type' => 'file',
             'label' => 'admin.offer.pdf_path',
-            'rules' => [],
+            'rules' => ['file', 'mimes:pdf'],
             'options' => [],
         ],
         'active' => [
