@@ -38,6 +38,7 @@
                                         <h4 class="title"><a href="{{route('offer.show.'.$item->id)}}">{{$item->title}}</a></h4>
                                         <a href="{{route('offer.show.'.$item->id)}}" class="btn mt-2">Zobacz ofertę</a>
                                     </div>
+
                                 </div>
                             </div>
                         @endforeach

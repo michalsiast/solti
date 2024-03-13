@@ -37,6 +37,9 @@
                                 <h2 class="title">{{$item->title}}</h2>
                             </div>
                             {!! $item->text !!}
+                            <div>
+                                <a href="{{ asset($item->pdf_path) }}" target="_blank">Pobierz plik PDF</a>
+                            </div>
                         </div>
                         <div class="gallery mt-50 mb-50">
                             <div class="container">

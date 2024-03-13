@@ -13,6 +13,7 @@ class Offer extends BaseModel
         'title',
         'lead',
         'text',
+        'pdf_path',
         'position',
         'active',
     ];

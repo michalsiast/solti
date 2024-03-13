@@ -34,7 +34,11 @@
                             {!! $form->renderFieldGroup('title') !!}
                             {!! $form->renderFieldGroup('lead') !!}
                             {!! $form->renderFieldGroup('text') !!}
-
+                            {!! $form->renderFieldGroup('pdf_path') !!}
+                            <div>
+                                <label>Wybrany plik pdf:</label>
+                                <p>{{ $item->pdf_path }}</p>
+                            </div>
                             <hr>
                             {!! $form->renderFieldGroup('active') !!}
 

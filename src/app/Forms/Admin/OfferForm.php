@@ -51,6 +51,13 @@ class OfferForm extends Form
             'rules' => [],
             'options' => [],
         ],
+        'pdf_path' => [
+            'name' => 'pdf_path',
+            'type' => 'file',
+            'label' => 'admin.offer.pdf_path',
+            'rules' => [],
+            'options' => [],
+        ],
         'active' => [
             'name' => 'active',
             'type' => 'checkbox',
