@@ -37,9 +37,12 @@
                                 <h2 class="title">{{$item->title}}</h2>
                             </div>
                             {!! $item->text !!}
-                            <div>
-                                <a href="{{ asset($item->pdf_path) }}" target="_blank">Pobierz plik PDF</a>
-                            </div>
+
+                            @if(!!$item->pdf_path)
+                                <div>
+                                    <a href="{{ '/storage/' . $item->pdf_path }}" style="color: #f49c07!important; font-weight: 600;" target="_blank">Zobacz specyfikację</a>
+                                </div>
+                            @endif
                         </div>
                         <div class="gallery mt-50 mb-50">
                             <div class="container">
@@ -70,9 +73,15 @@
                                 <h2 class="title">{{$item->title}}</h2>
                             </div>
                             {!! $item->text !!}
+                            @if(!!$item->pdf_path)
+                                <div>
+                                    <a href="{{ '/storage/' . $item->pdf_path }}" style="font-weight: 600" target="_blank">Zobacz specyfikację</a>
+                                </div>
+                            @endif
                             <div class="gallery mt-50 mb-50">
                                 <div class="container">
                                     <div class="row">
+
                                         @foreach($item->gallery->items as $item)
                                             @if($item->type !== 'cover')
                                                 <div class="col-lg-4 pb-4 magnific-img">

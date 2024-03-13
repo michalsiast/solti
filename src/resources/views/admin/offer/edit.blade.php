@@ -3,7 +3,7 @@
 
     <main>
 
-        <form id="offer" method="POST" action="{{route('admin.offer.edit', $item)}}">
+        <form id="offer" method="POST" action="{{route('admin.offer.edit', $item)}}" enctype="multipart/form-data">
             @csrf
 
             <div class="row">
