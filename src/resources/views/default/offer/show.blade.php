@@ -24,29 +24,26 @@
                 <div class="col-3">
                     @include('default.offer.category.home')
                 </div>
-                @if($item->offer_category_id == 15)
                 <div class="col-lg-9">
-                    <div class="about__content-three services__details-content" style="background-color: #00397c; border-radius: 5px">
-                        <div class="col-12 order-0 order-lg-2" style="padding: 0px">
+                    <div class="about__content-three services__details-content">
+                        <div class="col-12 order-0 order-lg-2">
                             <div class="about__img-three services__details-img">
                                 <img src="{{ renderImage($item->galleryCover(), 1800, 400, 'cover') }}" alt="img" style="width: 100%" class="wow img-custom-anim-right animated" data-wow-duration="1.5s" data-wow-delay="0.2s">
                             </div>
                         </div>
-                        <div class="offer-color-hormann" style="padding: 0px 15px">
-                            <div class="section__title section__title-three mt-20 mb-20">
-                                <h2 class="title">{{$item->title}}</h2>
-                            </div>
-                            {!! $item->text !!}
-
-                            @if(!!$item->pdf_path)
-                                <div>
-                                    <a href="{{ '/storage/' . $item->pdf_path }}" style="color: #f49c07!important; font-weight: 600;" target="_blank">Zobacz specyfikację</a>
-                                </div>
-                            @endif
+                        <div class="section__title section__title-three mt-20 mb-20">
+                            <h2 class="title">{{$item->title}}</h2>
                         </div>
+                        {!! $item->text !!}
+                        @if(!!$item->pdf_path)
+                            <div>
+                                <a href="{{ '/storage/' . $item->pdf_path }}" style="font-weight: 600" target="_blank">Zobacz specyfikację</a>
+                            </div>
+                        @endif
                         <div class="gallery mt-50 mb-50">
                             <div class="container">
                                 <div class="row">
+
                                     @foreach($item->gallery->items as $item)
                                         @if($item->type !== 'cover')
                                             <div class="col-lg-4 pb-4 magnific-img">
@@ -61,42 +58,6 @@
                         </div>
                     </div>
                 </div>
-                @else
-                    <div class="col-lg-9">
-                        <div class="about__content-three services__details-content">
-                            <div class="col-12 order-0 order-lg-2">
-                                <div class="about__img-three services__details-img">
-                                    <img src="{{ renderImage($item->galleryCover(), 1800, 400, 'cover') }}" alt="img" style="width: 100%" class="wow img-custom-anim-right animated" data-wow-duration="1.5s" data-wow-delay="0.2s">
-                                </div>
-                            </div>
-                            <div class="section__title section__title-three mt-20 mb-20">
-                                <h2 class="title">{{$item->title}}</h2>
-                            </div>
-                            {!! $item->text !!}
-                            @if(!!$item->pdf_path)
-                                <div>
-                                    <a href="{{ '/storage/' . $item->pdf_path }}" style="font-weight: 600" target="_blank">Zobacz specyfikację</a>
-                                </div>
-                            @endif
-                            <div class="gallery mt-50 mb-50">
-                                <div class="container">
-                                    <div class="row">
-
-                                        @foreach($item->gallery->items as $item)
-                                            @if($item->type !== 'cover')
-                                                <div class="col-lg-4 pb-4 magnific-img">
-                                                    <a class="image-popup-vertical-fit" href="{{renderImage($item->url, 1920, 1080, 'resize')}}">
-                                                        <img style="width: 100%" src="{{renderImage($item->url, 600, 600, 'fit')}}" alt="">
-                                                    </a>
-                                                </div>
-                                            @endif
-                                        @endforeach
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    @endif
             </div>
         </div>
     </section>
